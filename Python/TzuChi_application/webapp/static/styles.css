@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* 隐藏页面滚动条 */
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px; /* 设置最大宽度适应三列布局 */
+    width: 100%;
+    max-height: calc(100vh - 40px); /* 适配地址栏动态高度 */
+    overflow-y: auto; /* 允许垂直滚动 */
+    display: flex; /* 使用Flexbox布局 */
+    flex-wrap: wrap; /* 支持换行 */
+}
+
+.res-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px; /* 设置最大宽度适应三列布局 */
+    width: 100%;
+    max-height: 80vh; /* 设置最大高度以容纳滚动 */
+    flex-wrap: wrap; /* 支持换行 */
+}
+
+.form-group {
+    flex: 1 1 30%; /* 每个 .form-group 占据三分之一的宽度 */
+    box-sizing: border-box;
+    padding: 10px; /* 添加间隙 */
+    min-width: 250px; /* 设置最小宽度，以确保布局在小屏幕上不坍塌 */
+}
+
+.my-button{
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    margin: 10px;
+    color: #333333;
+    font-size: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin: 10px; /* 给复选框和文本之间留出空间 */
+    accent-color: #007bff; /* Chrome, Edge, 和 Opera 支持的复选框颜色 */
+    width: 18px; /* 复选框的宽度 */
+    height: 18px; /* 复选框的高度 */
+    cursor: pointer; /* 鼠标悬停时改为指针 */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 新增样式以使链接看起来像按钮 */
+a.button-link {
+    display: inline-block; /* 将链接显示为块元素 */
+    padding: 10px 15px; /* 添加按钮的填充 */
+    color: white; /* 按钮文字颜色 */
+    text-decoration: none; /* 去除链接下划线 */
+    background-color: #007bff; /* 按钮背景色 */
+    border-radius: 4px; /* 按钮圆角 */
+    transition: background-color 0.3s ease; /* 添加平滑过渡效果 */
+    text-align: center; /* 文字居中 */
+    cursor: pointer; /* 鼠标悬停时改为指针 */
+}
+
+a.button-link:hover {
+    background-color: #0056b3; /* 鼠标悬停时背景色变化 */
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+form {
+    margin: 15px 0;
+}
